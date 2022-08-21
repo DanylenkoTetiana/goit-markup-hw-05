@@ -200,10 +200,9 @@ img {
   border-radius: 4px;
 }
 
-.benefits-title {
+.title-third {
   margin-top: 0;
   margin-bottom: 10px;
-  width: inherit;
 
   font-size: 14px;
   line-height: 1.14;
@@ -211,6 +210,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
 }
+
 .benefit {
   margin-top: 0;
   margin-bottom: 0;
@@ -243,6 +243,42 @@ img {
 .activity-item:not(:last-child) {
   margin-right: 30px;
 }
+.activity-item {
+  position: relative;
+}
+/*
+.label .title-third {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  margin-bottom: 0;
+  padding: 27px 107px;
+
+  width: 370px;
+  height: 70px;
+  color: var(--secondary-text-color);
+  background: rgba(47, 48, 58, 0.8);
+}*/
+.label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.label .title-third {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  margin-bottom: 0;
+  color: var(--secondary-text-color);
+}
+
 /*Команда*/
 
 .team {
@@ -371,15 +407,9 @@ img {
 .link[rel='noopener noreferrer'] {
   color: var(--secondary-text-color);
 }
-.social-networks-title {
+.social-networks > .title-third {
   margin-top: 0;
   margin-bottom: 20px;
-
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   color: var(--secondary-text-color);
 }
 
@@ -487,7 +517,7 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(50%, 50%);
+  transform: translate(-50%, -50%);
 
   width: 528px;
   height: 581px;
@@ -512,12 +542,7 @@ img {
 }
 .close-icon {
   position: absolute;
-
-  top: 6px;
-  right: 6px;
-}
-.close-icon > use {
-  position: absolute;
-  top: 3px;
-  right: 3px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
